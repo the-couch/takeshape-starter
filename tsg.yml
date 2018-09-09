@@ -1,0 +1,22 @@
+templatePath: src
+staticPath: static
+buildPath: build
+
+htmlCompression:
+  enabled: true
+  options:
+  comments: true
+
+routes:
+  homepage:
+    path: /
+    template: pages/homepage.html
+    context:
+      query: data/homepage.graphql
+      variables:
+        # imageConfig:
+        #   w: 500
+        #   h: 500
+        #
+        # Or with yaml "anchors"
+        # <<: *smallImageConfig

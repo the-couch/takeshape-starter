@@ -1,0 +1,54 @@
+{% extends 'layouts/default.html' %}
+
+{% block content %}
+
+<div class='scener rel' data-app='scener' style='background: #C2E5F2'>
+  <div class='scener__spacer rel'>
+    <div class='scener__scene js-scene' data-color='#C2E5F2'>
+      <div class='scener__scene__inner fix top left x'>
+        <div class='abs fill f aic jcc'><h1>one</h1></div>
+      </div>
+    </div>
+  </div>
+  <div class='scener__spacer rel'>
+    <div class='scener__scene js-scene' data-color='#A9B9D9'>
+      <div class='scener__scene__inner fix top left x'>
+        <div class='abs fill f aic jcc'><h1>two</h1></div>
+      </div>
+    </div>
+  </div>
+  <div class='scener__spacer rel'>
+    <div class='scener__scene js-scene' data-color='#657BA6'>
+      <div class='scener__scene__inner fix top left x'>
+        <div class='abs fill f aic jcc'><h1>three</h1></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{#
+{% assign src = 'social-image.jpg' | asset_url %}
+{% include 'image' with src: src %}
+
+<div id='lockup' class='lockup rel' data-app='lockup'>
+  <div class='lockup__pointer abs top bottom left mya z10' data-tickl='100'></div>
+  <div class='lockup__pointer abs top bottom left mya z10' data-tickl='50'></div>
+  <div class='lockup__box abs top left' data-tickl='40'></div>
+  <div class='lockup__box abs top left' data-tickl='20'></div>
+  <div class='lockup__circle abs top left' data-tickl='10'>
+    <div class='abs fill' data-tickl='30'></div>
+  </div>
+</div>
+
+<div data-app='counter' class='f aic'>
+  <button>-</button>
+  <input type='number' value='0' />
+  <button>+</button>
+</div>
+
+<button data-app='incrementer'>Inc by 10</button>
+
+#}
+
+{% endblock %}
+

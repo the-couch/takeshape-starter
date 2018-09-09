@@ -1,0 +1,5 @@
+.tsgrc
+.graphqlrc
+graphql.config.json
+build/
+static/

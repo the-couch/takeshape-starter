@@ -1,0 +1,35 @@
+{
+  "name": "",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "npm run build && tsg deploy",
+    "build": "npm run build:assets && npm run build:site",
+    "build:site": "tsg build",
+    "build:assets": "spaghetti",
+    "watch": "concurrently 'npm run watch:site' 'npm run watch:assets' 'npm run serve'",
+    "watch:site": "tsg watch",
+    "watch:assets": "spaghetti -w",
+    "serve": "cd build && live-server --no-browser"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/the-couch/takeshape-starter.git"
+  },
+  "author": "the-couch",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/the-couch/takeshape-starter/issues"
+  },
+  "homepage": "https://github.com/the-couch/takeshape-starter#readme",
+  "dependencies": {
+    "operator": "^1.1.0",
+    "svbstrate": "^4.1.0"
+  },
+  "devDependencies": {
+    "@friendsof/spaghetti": "^0.1.0",
+    "concurrently": "^4.0.1",
+    "takeshape-cli": "^4.33.0"
+  }
+}
