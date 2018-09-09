@@ -11,7 +11,7 @@ npm i
 
 Set up your site using the TakeShape CLI:
 ```bash
-tsg init
+npm run init
 ```
 
 ## Commands

@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "init": "tsg init",
     "deploy": "npm run build && tsg deploy",
     "build": "npm run build:assets && npm run build:site",
     "build:site": "tsg build",
